@@ -1,1 +1,1 @@
-Python programlama dili ile çözülmüşlerdir.
+Sorularımız Python programlama dili ile sonuca varmışlardır.
