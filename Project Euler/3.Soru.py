@@ -6,6 +6,7 @@ for i in range(int(sayi**0.5)+1,1,-1):
             if i % j == 0 :
                 break
         else:
+            asal_sayi = i
             break
 
 print(asal_sayi)
