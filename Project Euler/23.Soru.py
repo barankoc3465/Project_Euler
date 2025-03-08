@@ -23,6 +23,3 @@ print(sum(Yazilamayan_sayilar))
 
 
 
-
-
-

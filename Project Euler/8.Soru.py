@@ -33,3 +33,15 @@ while adim != len(sayi)-13:
     adim += 1
 
 print(en_buyuk)
+
+
+import math
+
+en_buyuk = 0
+carpim = 1
+for i in range(len(sayi)-13):
+    carpim = math.prod(int(sayi[j]) 
+                       for j in range(i,i+13))
+    if carpim > en_buyuk:
+        en_buyuk = carpim
+print(en_buyuk)
