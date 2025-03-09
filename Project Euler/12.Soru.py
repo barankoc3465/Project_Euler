@@ -1,32 +1,14 @@
-# bekleme garantili çözüm
+def ucgen_sayisi(sayi):
+    return sayi * (sayi + 1) / 2
 
-sayi = 1
-bolen = 0
-
-while bolen < 50: 
-    print(sayi)
-    bolen = 0
-    sayi += 1
-    for i in range(1,sayi+1):
-        if sayi % i == 0:
-            bolen += 1
-            
-print(sayi)
-
-
-# matematik kullanarak teknik geliştirdiğimiz rahatlatıcı çözüm
-
-n = 1
-triangle_number = 1
-while True:
-    count = 0
-    for i in range(1, int(triangle_number**0.5) + 1):
-        if triangle_number % i == 0:
-            count += 2
-    if int(triangle_number**0.5) ** 2 == triangle_number:
-        count -= 1
-    if count > 500:
-        print(triangle_number)
+sinir = 1000000
+for n in range(1,sinir):
+    sayi = ucgen_sayisi(n)
+    adet = 0
+    for bolen in range(1,int(sayi**0.5)):
+        if sayi % bolen == 0:
+            adet += 1
+    adet *= 2
+    if adet > 500:
+        print(int(sayi))
         break
-    n += 1
-    triangle_number += n
